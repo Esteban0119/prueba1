@@ -12,6 +12,7 @@ pipeline {
 
           // Imprimir la ubicación del archivo creado (opcional)
           echo "Archivo creado: ${fileName}"
+          bat "move ${fileName} C:\Users\esteb\OneDrive\Desktop\Trabajos Universidad\Gestion\Prueba3 ${fileName}"
         }
 
       }
