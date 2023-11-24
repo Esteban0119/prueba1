@@ -19,7 +19,7 @@ pipeline {
          // Enviar correo electrónico
           emailext body: "Se ha creado el archivo ${fileName}",
                    subject: "Archivo creado",
-                   to: "esteban950119@gmail.com"
+                   to: "fargoz@gmail.com"
 
 
         }
