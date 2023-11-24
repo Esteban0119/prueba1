@@ -16,6 +16,11 @@ pipeline {
          // Mover el archivo a otra carpeta
           bat "move \"${fileName}\" \"C:\\Users\\esteb\\OneDrive\\Desktop\\Trabajos Universidad\\Gestion\\Prueba3\\\""
 
+         // Enviar correo electrónico
+          emailext body: "Se ha creado el archivo ${fileName}",
+                   subject: "Archivo creado",
+                   to: "esteban_ramirez82132@elpoli.edu.co"
+
 
         }
 
